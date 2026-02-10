@@ -6,7 +6,7 @@ function guardarNombreYRedirigir() {
 
   if (nombre !== "") {
     localStorage.setItem("nombreUsuario", nombre);
-    window.location.href = "index.html";
+    window.location.href = "inicio.html";
   } else {
     alert("Por favor ingresa tu nombre");
   }
