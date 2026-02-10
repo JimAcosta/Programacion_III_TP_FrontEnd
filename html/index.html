@@ -1,69 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibras</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <script defer src="/js/productos.js"></script>
-    <script defer src="/js/func-carrito.js"></script>
-    <link rel="icon" href="/img/logo.png" type="image/png">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibras - Inicio</title>
+  <link rel="icon" href="/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" href="/img/logo.png" type="image/png">
+  <style>
 
+  </style>
+</head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
+  <div class="logo">
+    <img src="/img/logo.png" alt="Logo Vibras">
+  </div>
 
-        <a href="index.html">
-            <div class="logo">
-                <img src="/img/logo.png" height="80px" alt="">
-            </div>
-        </a>
-        
-        <div class="nombreUsuario"></div>
-        
+  <div class="botones-inicio">
+    <button onclick="window.location.href='ingresonombre.html'">Ingresar como Cliente</button>
+    <button onclick="window.location.href='https://programacion-iii-tp-backend.onrender.com/dashboard'">Ingresar como Administrador</button>
+  </div>
 
-        <div class="carrito">
-            <span>Carrito: <span id="contador-carrito">0</span> productos</span>
-        </div>
-    </header>
-
-    
-    <!-- Contenedor principal -->
-    <main>
-    <section class="seccion-productos">
-        <button id="mostrar-vinilos">Vinilos</button>
-        <button id="mostrar-discos">Discos</button>
-        <button id="mostrar-todos">Todos</button>
-        <div id="contenedor-productos"></div>
-    </section>
-
-    <!-- Seccion carrito -->
-    <section class="seccion-carrito">
-        <h2>Carrito</h2>
-        
-        <div id="items-carrito">
-            <p>No hay elementos en el carrito.</p>
-        </div>
-
-        <div class="total-carrito">
-            <p>Total: <span id="precio-total">$0.00</span></p>
-        
-        </div>
-        
-        <div class="flex-btn">
-            <button id="limpiar" onclick="limpiarCarrito()">Limpiar carrito</button>
-
-            <button id="btn-continuar">
-                Continuar
-            </button>
-        </div>
-        
-    </section>
-
-    
-
-    </main>
 </body>
 </html>
