@@ -31,7 +31,7 @@ function mostrarTicket() {
 // Reiniciar el sistema
 function reiniciarSistema() {
   localStorage.clear();
-  window.location.href = "/html/inicio.html"; 
+  window.location.href = "../index.html"; 
 }
 
 function obtenerPedidoDesdeLocalStorage() {
