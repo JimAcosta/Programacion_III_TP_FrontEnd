@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket de Compra</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script defer src="/js/carrito-util.js"></script>
+    <script defer src="/js/ticket.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="/img/logo.png" height="80px" alt="">
+            </div>
+        </a>
+    </header>
+
+    <main class="ticket-container">
+        <div class="ticket-empresa">
+            <img src="/img/logo.png" alt="Logo" height="100px">
+        </div>
+        <h2>Ticket de compra</h2>
+
+        <div id="datos-usuario"></div>
+
+        <ul id="detalle-productos"></ul>
+
+        <div id="total-final"></div>
+    </main>
+
+    <div class="contenedor-reiniciar">
+        <button id="reiniciar">Volver al inicio</button>
+        <button id="descargarTicket">Descargar Ticket</button>
+    </div>
+    
+</body>
+</html>

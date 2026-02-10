@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vibras</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" href="../img/logo.png" type="image/png" />
+  <script defer src="../js/IngresoNombre.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo" />
+      </div>
+    </a>
+
+
+    <div class="carrito">
+      <span>Carrito: <span id="contador-carrito">0</span> productos</span>
+    </div>
+  </header>
+
+  <!-- Main -->
+  
+
+  <main class="main-bienvenida">
+    <div class="bloque-bienvenida">
+      <h2>Bienvenido! Ingresa tu nombre</h2>
+
+      <div class="enviar-nombre">
+        <input type="text" placeholder="Ingrese su nombre" id="input-name" />
+        <button id="button-name">
+          <img src="/img/flecha-correcta-removebg-preview.png" alt="Ingresar" />
+        </button>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const inputNombre = document.getElementById("input-name");
+      const boton = document.getElementById("button-name");
+
+      function redirigirSiNombre() {
+        const nombre = inputNombre.value.trim();
+        if (nombre !== "") {
+          localStorage.setItem("nombreUsuario", nombre);
+          window.location.href = "index.html";
+        } else {
+          alert("Por favor ingresa tu nombre");
+        }
+      }
+
+      boton.addEventListener("click", redirigirSiNombre);
+
+      inputNombre.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          redirigirSiNombre();
+        }
+      });
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+        const nombreUsuario = localStorage.getItem("nombreUsuario");
+        const divNombre = document.querySelector(".nombreUsuario");
+
+        if (nombreUsuario) {
+        divNombre.textContent = `Hola ${nombreUsuario}`;
+        } else {
+        divNombre.textContent = "Hola invitado";
+        }
+    });
+
+  </script>
+</body>
+</html>

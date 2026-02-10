@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito Vibras</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="/js/func-carrito.js"></script>
+    <script defer src="/js/carrito.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="/img/logo.png" height="80px" alt="Logo">
+            </div>
+        </a>
+
+        <div class="nombreUsuario"></div>
+        
+        
+        <div class="carrito">
+            <span>Carrito: <span id="contador-carrito">0</span> productos</span>
+        </div>
+    </header>
+    <!-- Seccion carrito -->
+    <main class="seccion-carrito" >
+        <h2>Carrito</h2>
+        
+        <div id="items-carrito">
+            
+        </div>
+
+        <div class="total-carrito">
+            <p>Total: <span id="precio-total">$0.00</span></p>
+        </div>
+
+        <div class="flex-btn">
+            <button id="volver">Volver</button>
+            <button id="confirmar-compra">Confirmar compra</button>
+        </div>
+        
+    </main>
+</body>
+</html>

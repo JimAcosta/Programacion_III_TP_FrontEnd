@@ -1,0 +1,14 @@
+[
+  { "id": 1, "nombre": "anana", "precio": 3000, "img": "/img/descarga.jfif", "activo": true, "tipo": "vinilo" },
+  { "id": 2, "nombre": "arandano", "precio": 12000, "img": "/img/descarga.jfif", "activo": true, "tipo": "disco" },
+  { "id": 3, "nombre": "banana", "precio": 1000, "img": "/img/descarga.jfif", "activo": true, "tipo": "vinilo" },
+  { "id": 4, "nombre": "frambuesa", "precio": 4000, "img": "/img/descarga.jfif", "activo": true, "tipo": "disco" },
+  { "id": 5, "nombre": "frutilla", "precio": 3000, "img": "/img/descarga.jfif", "activo": true, "tipo": "vinilo" },
+  { "id": 6, "nombre": "kiwi", "precio": 2000, "img": "/img/descarga.jfif", "activo": true, "tipo": "disco" },
+  { "id": 7, "nombre": "mandarina", "precio": 800, "img": "/img/descarga.jfif", "activo": true, "tipo": "vinilo" },
+  { "id": 8, "nombre": "manzana", "precio": 1500, "img": "/img/descarga.jfif", "activo": true, "tipo": "disco" },
+  { "id": 9, "nombre": "naranja", "precio": 9000, "img": "/img/descarga.jfif", "activo": true, "tipo": "vinilo" },
+  { "id": 10, "nombre": "pera", "precio": 2500, "img": "/img/descarga.jfif", "activo": true, "tipo": "disco" },
+  { "id": 11, "nombre": "pomelo-amarillo", "precio": 2000, "img": "/img/descarga.jfif", "activo": true, "tipo": "vinilo" },
+  { "id": 12, "nombre": "pomelo-rojo", "precio": 2000, "img": "/img/descarga.jfif", "activo": true, "tipo": "disco" }
+]

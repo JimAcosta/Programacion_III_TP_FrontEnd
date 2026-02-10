@@ -1,0 +1,510 @@
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #E6E6E6;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Header*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;         
+  padding: 0 20px;
+  background-color: #ECECEC;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.logo img {
+  display: flex;
+  align-items: end;
+  text-decoration: none;
+  gap: 8px;
+}
+.carrito {
+  font-size: 0.95rem;
+  color: #222;
+  white-space: nowrap;        
+}
+
+#contador-carrito {
+  font-weight: 600;
+}
+.main-bienvenida {
+  min-height: calc(100vh - 48px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #ffffff, #2a2a2a);
+  color: #eaeaea;
+  text-align: center;
+}
+
+/* Contenedor del título + input */
+.bloque-bienvenida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título */
+.bloque-bienvenida h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 0 32px 0;
+  color: #313030;
+}
+
+/* Input + botón */
+.enviar-nombre {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Input */
+#input-name {
+  width: 260px;
+  padding: 10px 14px;
+
+  background-color: #3a3a3a;
+  border: 1px solid #555;
+  border-radius: 6px;
+
+  color: #f5f5f5;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+#input-name::placeholder {
+  color: #b5b5b5;
+}
+
+/* Botón */
+
+#button-name {
+  width: 44px;
+  height: 44px;
+  background-color: #ECECEC;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+
+/* Botón */
+
+
+#button-name:hover {
+  background-color: #ffeeee;
+}
+
+
+/* Seccion productos */
+
+#mostrar-vinilos, #mostrar-discos,#mostrar-todos{
+  cursor: pointer;
+  background-color: black;
+  font-weight: bold;
+  font-size: 20px;
+  color: #e4e5e7;
+  border-radius: 5px;
+  height: 40px;
+  margin: 40px 20px;
+}
+
+#mostrar-vinilos:hover{
+  color: white;
+  background-color: black;
+}
+#mostrar-discos:hover{
+  color: white;
+  background-color: black;
+}
+
+#contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 120px;
+  background: linear-gradient(
+    to bottom,
+    #F2F2F2,
+    #E6E6E6
+  );
+}
+
+.seccion-productos {
+  padding: 40px 0;
+  text-align: center;
+}
+
+
+.card-producto {
+  width: 220px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+
+  background-color: #d3d3d3;            
+  border: 1px solid #d3d3d3;
+  border-radius: 14px;
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+  transition: 
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.card-producto:hover {
+  transform: translateY(-4px);
+  background-color: #d3d3d3;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.35);
+}
+
+/* Imagen */
+.card-producto img {
+  width: 140px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Título */
+.card-producto h3 {
+  font-size: 1rem;
+  margin: 8px 0 4px;
+  color: #0F0F0F; 
+}
+
+/* Precio / texto */
+.card-producto p {
+  font-size: 0.95rem;
+  color: #1F1F1F;
+  margin-bottom: 10px;
+}
+
+/* Botón */
+.card-producto button {
+  background-color: #1A1A1A;  
+  color: #F2F2F2;
+  border: 1px solid #2E2E2E;
+
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 8px;
+
+  font-size: 0.85rem;
+  cursor: pointer;
+
+  transition: 
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+/* Hover botón */
+.card-producto button:hover {
+  background-color: #2E2E2E; /* gris oscuro sobrio */
+  transform: scale(1.04);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Active */
+.card-producto button:active {
+  background-color: #0F0F0F;
+  transform: scale(1);
+}
+
+
+  
+/* Seccion carrito */
+
+.seccion-carrito {
+  padding: 40px 0;
+  background: linear-gradient(to bottom, #EDEDED, #DADADA);
+  border-top: 1px solid #C4C4C4;
+}
+
+/* Lista de items */
+#items-carrito {
+  padding: 20px 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Item individual */
+.item-carrito {
+  width: 100%;
+}
+
+/* Bloque visual del item */
+.bloque-item {
+  width: 640px;
+  padding: 14px 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #7A7A7A;
+  border: 1px solid #8A8A8A;
+  border-radius: 12px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bloque-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+/* Texto */
+.nombre-item,
+.info-carrito {
+  font-size: 1rem;
+  color: #0F0F0F;
+}
+
+/* Total */
+.total-carrito {
+  width: 640px;
+  margin: 20px auto 0;
+
+  font-size: 1.1rem;
+  text-align: right;
+  color: #1A1A1A;
+  font-weight: 500;
+}
+
+/* Botones generales  */
+#limpiar,
+#btn-continuar,
+#confirmar-compra {
+  width: 220px;
+  height: 46px;
+
+  border-radius: 10px;
+  border: 1px solid #2E2E2E;
+
+  font-size: 0.95rem;
+  cursor: pointer;
+
+  background-color: #1A1A1A;
+  color: #F5F5F5;
+
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+#limpiar:hover,
+#btn-continuar:hover,
+#confirmar-compra:hover {
+  background-color: #2E2E2E;
+  transform: translateY(-1px);
+}
+
+/* Visibilidad */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+
+.flex-btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.enviar-nombre{
+    display: flex;
+    justify-content: center; 
+    margin-top: 250px;
+    align-items: center;
+}
+
+#input-name{
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #333;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#button-name img{
+  height: 32px;        
+  width: auto;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#volver{
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  height: 50px;
+}
+
+#btnSumar, #btnRestar, #btnEliminar{
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+#btnSumar{
+  background-color: green;
+}
+#btnRestar{
+  background-color: red;
+}
+#btnEliminar{
+  background-color: rgb(178, 177, 177);
+}
+
+/* Ticket */
+.ticket-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.ticket-container h2 {
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 28px;
+}
+
+#datos-usuario p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #444;
+}
+
+#detalle-productos {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+    text-align: left;
+}
+
+#detalle-productos li {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#total-final {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+#reiniciar, #descargarTicket {
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contenedor-reiniciar {
+    text-align: center;
+}
+
+#reiniciar:hover , #descargarTicket:hover{
+    background-color: #444;
+}
+
+.error{
+  color: red;
+  font-size: "14px";
+  margin-top: "8px";
+  text-align: "center";
+}
+
+
+
+.logo img {
+      height: 150px;
+}
+
+.botones-inicio {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+/* Botones */
+.botones-inicio button {
+  padding: 14px 32px;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #1A1A1A; 
+  color: #F5F5F5;           
+  border: 1px solid #2A2A2A;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 260px;
+  transition: 
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+/* Hover */
+.botones-inicio button:hover {
+  background-color: #2E2E2E; 
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1px);
+}
+
+
+.botones-inicio button:active {
+  background-color: #0F0F0F;
+  transform: translateY(0);
+}
+
+.botones-inicio button:focus {
+  outline: none;
+  border-color: #6A6A6A;
+}
+
+  .botones-inicio button:hover {
+    background-color: #444;
+  }
